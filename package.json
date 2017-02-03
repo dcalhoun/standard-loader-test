@@ -1,0 +1,32 @@
+{
+  "name": "standard-loader-test",
+  "version": "0.0.1",
+  "description": "Test case for ignoring files with standard-loader.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -p --optimize-occurrence-order --optimize-dedupe",
+    "start": "webpack-dev-server --hot --inline --history-api-fallback --host 0.0.0.0",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dcalhoun/standard-loader-test.git"
+  },
+  "author": "David Calhoun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dcalhoun/standard-loader-test/issues"
+  },
+  "homepage": "https://github.com/dcalhoun/standard-loader-test#readme",
+  "devDependencies": {
+    "standard": "^8.5.0",
+    "standard-loader": "^5.0.0",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "standard": {
+    "ignore": [
+      "nonStandard.js"
+    ]
+  }
+}
